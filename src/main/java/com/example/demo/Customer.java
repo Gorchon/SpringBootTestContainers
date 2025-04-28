@@ -1,5 +1,6 @@
 package com.example.demo;
 
+// in this file, we define the Customer entity class
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,7 +22,8 @@ class Customer {
   @Column(nullable = false, unique = true)
   private String email;
 
-  public Customer() {}
+  public Customer() {
+  }
 
   public Customer(Long id, String name, String email) {
     this.id = id;
